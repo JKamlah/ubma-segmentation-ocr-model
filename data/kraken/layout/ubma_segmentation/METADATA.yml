@@ -5,7 +5,7 @@ model:
   repo: https://github.com/JKamlah/ubma-segmentation-ocr-model/
   defaultmodel: >-
     https://github.com/JKamlah/ubma-segmentation-ocr-model/blob/main/data/kraken/layout/ubma_segmentation/ubma_segmentation.mlmodel
-  description: A Kraken segmentation for a wide range of materials.
+  description: Kraken segmentation model for a wide range of materials.
   topology: >-
     [1,1800,0,3 Cr{C_0}7,7,64,2,2 Gn{Gn_1}32 Cr{C_2}3,3,128,2,2 Gn{Gn_3}32 Cr{C_4}3,3,128 Gn{Gn_5}32 Cr{C_6}3,3,256 Gn{Gn_7}32 Cr{C_8}3,3,256 Gn{Gn_9}32 Lbx{L_10}32 Lby{L_11}32 Cr{C_12}1,1,32 Gn{Gn_13}32 Lby{L_14}32 Lbx{L_15}32 O{l_16}2l4]
   fileformat: .mlmodel
