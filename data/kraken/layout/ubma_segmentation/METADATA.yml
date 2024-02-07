@@ -47,7 +47,7 @@ project:
   homepage: >-
     https://www.bib.uni-mannheim.de/
 authors:
-    - name: Stefan
+  - name: Stefan
     surname: Weil
     orcid: 0000-0002-0524-9898
     roles:
