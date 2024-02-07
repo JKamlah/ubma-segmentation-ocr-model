@@ -1,0 +1,66 @@
+schema: >-
+  https://github.com/JKamlah/ocr-model-metadata/tree/master/schema/2022-03-15/schema.json
+model:
+  name: UBMA Segmentation
+  repo: https://github.com/JKamlah/ubma-segmentation-ocr-model/
+  defaultmodel: >-
+    https://github.com/JKamlah/ubma-segmentation-ocr-model/blob/main/data/kraken/layout/ubma_segmentation/ubma_segmentation.mlmodel
+  description: A Kraken segmentation for a wide range of materials.
+  topology: >-
+    [1,1800,0,3 Cr{C_0}7,7,64,2,2 Gn{Gn_1}32 Cr{C_2}3,3,128,2,2 Gn{Gn_3}32 Cr{C_4}3,3,128 Gn{Gn_5}32 Cr{C_6}3,3,256 Gn{Gn_7}32 Cr{C_8}3,3,256 Gn{Gn_9}32 Lbx{L_10}32 Lby{L_11}32 Cr{C_12}1,1,32 Gn{Gn_13}32 Lby{L_14}32 Lbx{L_15}32 O{l_16}2l4]
+  fileformat: .mlmodel
+  type: Layout analysis
+  creation-date: '2023-01-01'
+  layout-specs:
+    - Segmentation
+  text-specs: []
+  license:
+    name: PublicDomainMark 1.0
+    url: https://creativecommons.org/publicdomain/mark/1.0/
+software:
+  name: Kraken
+training:
+  info:
+    trainingstype: From scratch
+    direct: '50'
+  data:
+    layout:
+      type: layoutanalysis
+      elementType:
+        - Region
+        - TextLine
+      elementTags:
+        tags:
+          - elementType: Region
+            tag: default
+          - elementType: TextLine
+            tag: default
+      level: levelmix
+evaluation:
+  input: Internale achieved accuracy
+  metrics: CER
+  results: '59.49'
+uses:
+  general: Use it for all kind of layout with the OCR-Engine Kraken.
+project:
+  name: University library Mannheim
+  homepage: >-
+    https://www.bib.uni-mannheim.de/
+authors:
+    - name: Stefan
+    surname: Weil
+    orcid: 0000-0002-0524-9898
+    roles:
+      - project-manager
+  - name: Jan
+    surname: Kamlah
+    orcid: 0000-0002-0417-7562
+    roles:
+      - project-manager
+  - name: Thomas
+    surname: Schmidt
+    orcid: 0000-0003-3620-3355
+    roles:
+      - project-manager
+additional:
+  how-to: Download the .mlmodel and use it with Kraken or eScriptorium.
